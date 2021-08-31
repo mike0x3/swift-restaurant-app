@@ -9,6 +9,8 @@ import SwiftUI
 
 struct InfoView: View {
     
+    @Binding var selectedTab: Int
+    
     private let navigationElements: [NavigationElement] = [
         NavigationElement.init(info: "0985704400", icon: UIImage(systemName: "phone.fill")!, action: "tel://0985704400"),
         NavigationElement.init(info: "Via Pippo Baudo 32", icon: UIImage(systemName: "location.fill")!, action: "https://www.google.com/maps/place/La+Vecchia+Cantina+da+Mauro+Roma/@41.887638,12.4964414,13z"),
@@ -95,6 +97,6 @@ struct InfoView: View {
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        InfoView(selectedTab: .constant(5))
     }
 }

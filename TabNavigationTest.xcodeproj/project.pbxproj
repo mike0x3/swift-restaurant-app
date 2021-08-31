@@ -21,6 +21,10 @@
 		86C1C55226D9668100763E7E /* NewsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C55126D9668100763E7E /* NewsElement.swift */; };
 		86C1C55626D971A000763E7E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C55526D971A000763E7E /* Extensions.swift */; };
 		86C1C55B26DA4D4B00763E7E /* RestaurantLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C55A26DA4D4A00763E7E /* RestaurantLogo.swift */; };
+		86C1C55E26DBAF6100763E7E /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C55D26DBAF6100763E7E /* NewsData.swift */; };
+		86C1C56026DBAFAF00763E7E /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C55F26DBAFAF00763E7E /* MenuData.swift */; };
+		86C1C56226DD0EAC00763E7E /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C56126DD0EA900763E7E /* SocialMedia.swift */; };
+		86C1C56426DD0F3200763E7E /* SocialMediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1C56326DD0F3200763E7E /* SocialMediaData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		86C1C55126D9668100763E7E /* NewsElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsElement.swift; sourceTree = "<group>"; };
 		86C1C55526D971A000763E7E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		86C1C55A26DA4D4A00763E7E /* RestaurantLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLogo.swift; sourceTree = "<group>"; };
+		86C1C55D26DBAF6100763E7E /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		86C1C55F26DBAFAF00763E7E /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		86C1C56126DD0EA900763E7E /* SocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		86C1C56326DD0F3200763E7E /* SocialMediaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		86C1C52E26D7E4FD00763E7E /* TabNavigationTest */ = {
 			isa = PBXGroup;
 			children = (
+				86C1C55C26DBAECE00763E7E /* Data */,
 				86C1C55326D9718700763E7E /* Extensions */,
 				86C1C54926D9185400763E7E /* Model */,
 				86C1C53E26D7EDC700763E7E /* Views */,
@@ -111,6 +120,7 @@
 				86C1C54A26D9186600763E7E /* NavigationElement.swift */,
 				86C1C54E26D9665800763E7E /* MenuElement.swift */,
 				86C1C55126D9668100763E7E /* NewsElement.swift */,
+				86C1C56126DD0EA900763E7E /* SocialMedia.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +139,16 @@
 				86C1C55A26DA4D4A00763E7E /* RestaurantLogo.swift */,
 			);
 			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
+		86C1C55C26DBAECE00763E7E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86C1C55D26DBAF6100763E7E /* NewsData.swift */,
+				86C1C55F26DBAFAF00763E7E /* MenuData.swift */,
+				86C1C56326DD0F3200763E7E /* SocialMediaData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +225,16 @@
 				86C1C54626D7EE8300763E7E /* MenuView.swift in Sources */,
 				86C1C54226D7EE2D00763E7E /* NewsView.swift in Sources */,
 				86C1C54F26D9665800763E7E /* MenuElement.swift in Sources */,
+				86C1C56426DD0F3200763E7E /* SocialMediaData.swift in Sources */,
 				86C1C55B26DA4D4B00763E7E /* RestaurantLogo.swift in Sources */,
 				86C1C54B26D9186600763E7E /* NavigationElement.swift in Sources */,
 				86C1C53226D7E4FD00763E7E /* ContentView.swift in Sources */,
 				86C1C55226D9668100763E7E /* NewsElement.swift in Sources */,
+				86C1C56226DD0EAC00763E7E /* SocialMedia.swift in Sources */,
 				86C1C54426D7EE4800763E7E /* InfoView.swift in Sources */,
+				86C1C55E26DBAF6100763E7E /* NewsData.swift in Sources */,
 				86C1C55626D971A000763E7E /* Extensions.swift in Sources */,
+				86C1C56026DBAFAF00763E7E /* MenuData.swift in Sources */,
 				86C1C53026D7E4FD00763E7E /* TabNavigationTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

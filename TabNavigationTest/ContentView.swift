@@ -13,37 +13,40 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            MenuView()
+            MenuView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "filemenu.and.selection")
                     Text("Menu")
                 }
                 .tag(1)
-            NewsView()
+            NewsView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("News")
                 }
                 .tag(2)
-            HomeView()
+            HomeView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                 }
                 .tag(3)
-            GalleryView()
+            GalleryView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "photo.on.rectangle")
                     Text("Gallery")
                 }
                 .tag(4)
-            InfoView()
+            InfoView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "info")
                     Text("Info")
                 }
                 .tag(5)
         }
+    }
+    func moveTo(screen: Int) {
+        selectedTab = screen
     }
 }
 
